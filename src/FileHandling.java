@@ -11,6 +11,7 @@ public class FileHandling {
             FileWriter writer = new FileWriter(path, true);
             writer.write(text);
             writer.close();
+            System.out.println("\n\nData written successfully. File closed.");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -26,6 +27,7 @@ public class FileHandling {
                 System.out.print((char) character);
             }
             reader.close();
+            System.out.println("\n\nFile closed.");
  
         } catch (IOException e) {
             e.printStackTrace();
@@ -39,6 +41,7 @@ public class FileHandling {
             FileWriter fw = new FileWriter(path, true);
             fw.write(text);
             fw.close();
+            System.out.println("\n\nData written successfully. File closed.");
         }
         catch(IOException e) {
         }
